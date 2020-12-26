@@ -4,60 +4,63 @@
     <meta charset="UTF-8" />
     <title>Adony Ulloa</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div>
-      <figure>
+      <figure class="logo">
         <img src="images/logo.png" alt="Logo de http://adonyulloa.com"/>
       </figure>
       </div>
-      <nav>
+      <nav class="menu">
         <ol>
             <li>
-              <a href="#">Portafolio</a>
+              <a class="link" href="#portafolio">Portafolio</a>
             <li>
-              <a href="#">Experiencia</a>
+              <a class="link" href="#Sobre mi">Experiencia</a>
             <li>
-              <a href="#">Trabajemos juntos</a>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
         </ol>
       </nav>
     </header>
-    <section>Sección principal</section>
+    <section class="hero">
       <h1>
         Hola soy <strong>Adony Ulloa</strong> estudiante de <strong>Platzi</strong> , <br> Ingenieria en Sistemas y <br> Redes Informaticas en un futuro muy proximo.
       </h1>
       <img src="images/hero.jpg" width="500" alt="Imagen de Adony" />
-      <article>
-          <h2>Portafolio (Estudios Destacados)</h2>
-      </article>
-      <article>
-          <h3>Bachillerato</h3>
-          <h6>React Native /React</h6>
-          <p><small><strong>Fecha:</strong>23/12/2020</small></p>
-          <p><small><strong>Puedes saber mas en:</strong> www.platzi.com</small></p>
-          <p>Adony Ulloa es un estudiante graduado de bachillerato en opcion contaduria, <br> hace poco comenzo a estudiar en platzi muchas curso de desarrollo wed entre muchos otros. <br> Actualmente la ruta de aprendizaje de PHP</p>
-      <img width="500 " src="images/platzi-video-react-native.png" alt="Video de Platzi"/>
-      </article>
     </section>
-    <section>
-      <h2>Más sobre mi Experiencias</h2>
-      <article>
-        <figure>
-          <img src="Images/platzi-conf.jpg" width="500"/>
+    <section id="portafolio" class="portfolio">
+          <h2>Portafolio (Estudios Destacados)</h2>
+      <article class="project">
+          <h3 class="project-title">Bachillerato</h3>
+          <h6 class="project-course">React Native /React</h6>
+          <p class="project-date"><small><strong>Fecha:</strong>23/12/2020</small></p>
+          <p class="project-url"><small><strong>Puedes saber mas en:</strong> www.platzi.com</small></p>
+          <p class="project-description">Adony Ulloa es un estudiante graduado de bachillerato en opcion contaduria, <br> hace poco comenzo a estudiar en platzi muchas curso de desarrollo wed entre muchos otros. <br> Actualmente la ruta de aprendizaje de PHP</p>
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500 " src="images/platzi-video-react-native.png" alt="Video de Platzi"/>
         </figure>
-        <h3>Estudiando en Platzi 2020</h3>
-        <p>Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
-        <a>Ver cursos realizados</a>
+        </article>
+    </section>
+    <section id="Sobre mi">
+      <h2>Más sobre mi Experiencias</h2>
+      <article class="event">
+        <figure class="event-imageCoutainer">
+          <img class="event-image" src="Images/platzi-conf.jpg" width="500"/>
+        </figure>
+        <h3 class="event-title">Estudiando en Platzi 2020</h3>
+        <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
+        <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Cursos realizados en Platzi</a>
       </article>
     </section> 
-    <section>
-      <form action="/suscripcion/">
+    <section id="contacto" class="contact">
+      <form action="/suscripcion/" class="form-email">
         <h3>¿Creamos algo juntos?</h3>
         <input type="text" placeholder="Déjame tu email" id="email">
         <button>Enviar</button>
       </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
   </body>
 </html>
