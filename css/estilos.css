@@ -95,14 +95,19 @@ h1 strong {
 }
 
 .hero{
-   height: 300px;
-   background-image: url('../images/hero.jpg');
+   /* height: 300px; */
+   /* background-image: url('../images/hero.jpg'); */
    background-color: #1b2127;
-   background-size: 600px 600px;
-   background-repeat: no-repeat;
-   background-position-x: right;
+   /* background-size: 600px 600px; */
+   /* background-repeat: no-repeat; */
+   /* background-position-x: right; */
    display: flex;
    align-items: center;
+   justify-content: space-between;
+
+}
+.hero-image {
+   object-fit: cover;
 }
 
 .portfolio {
@@ -213,6 +218,7 @@ h2 {
 
 .event-list {
    display: flex;
+   flex-wrap: wrap;
 }
 
 .event-list-title {
@@ -309,6 +315,15 @@ h2 {
    border-radius: 5px;
    width: 100px;
    margin: 10px auto 0;
+}
 
-
+.container {
+ /*   border: 1px solid red; */
+   width: 1000px;
+   margin: 0px auto;
+   display: inherit;
+   justify-content: inherit;
+   align-items: inherit;
+   height: inherit;
+   flex-wrap: inherit;
 }
