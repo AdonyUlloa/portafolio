@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <title>Adony Ulloa</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    
   </head>
   <body>
-    <header class="header">
-      <div>
+      <header class="header">
       <figure class="logo">
-        <img src="images/logo.png" alt="Logo de http://adonyulloa.com"/>
+        <img src="images/logo.png" height="50" alt="Logo de http://adonyulloa.com"/>
       </figure>
-      </div>
       <nav class="menu">
         <ol>
             <li>
@@ -26,32 +26,66 @@
     </header>
     <section class="hero">
       <h1>
-        Hola soy <strong>Adony Ulloa</strong> estudiante de <strong>Platzi</strong> , <br> Ingenieria en Sistemas y <br> Redes Informaticas en un futuro muy proximo.
+        Hola! soy <strong>Adony Ulloa</strong> estudiante de <strong>Platzi</strong> , <br> Ingeniero en Sistemas y Redes <br> Informaticas en un futuro muy proximo.
       </h1>
-      <img src="images/hero.jpg" width="500" alt="Imagen de Adony" />
+      <!-- <img src="images/hero.jpg" width="500" alt="Imagen de Adony" /> -->
     </section>
     <section id="portafolio" class="portfolio">
           <h2>Portafolio (Estudios Destacados)</h2>
       <article class="project">
+        <div class="project-details">
           <h3 class="project-title">Bachillerato</h3>
           <h6 class="project-course">React Native /React</h6>
-          <p class="project-date"><small><strong>Fecha:</strong>23/12/2020</small></p>
+          <p class="project-date"><small><strong>Fecha: </strong>   23/12/2020</small></p>
           <p class="project-url"><small><strong>Puedes saber mas en:</strong> www.platzi.com</small></p>
-          <p class="project-description">Adony Ulloa es un estudiante graduado de bachillerato en opcion contaduria, <br> hace poco comenzo a estudiar en platzi muchas curso de desarrollo wed entre muchos otros. <br> Actualmente la ruta de aprendizaje de PHP</p>
+          <p class="project-description">Adony Ulloa es un estudiante graduado de bachillerato en opcion <br> contaduria, hace poco comenzo a estudiar en platzi muchas curso de desarrollo wed entre muchos otros. <br> <br> Actualmente la ruta de aprendizaje es de PHP</p>
+        </div>
         <figure class="project-imageContainer">
           <img class="project-image" width="500 " src="images/platzi-video-react-native.png" alt="Video de Platzi"/>
         </figure>
         </article>
     </section>
-    <section id="Sobre mi">
-      <h2>Más sobre mi Experiencias</h2>
+    <h2 class="event-list-title">Más sobre mi Experiencias</h2>
+    <section id="eventos" class="event-list">
       <article class="event">
         <figure class="event-imageCoutainer">
           <img class="event-image" src="Images/platzi-conf.jpg" width="500"/>
         </figure>
-        <h3 class="event-title">Estudiando en Platzi 2020</h3>
-        <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
-        <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Cursos realizados en Platzi</a>
+        <div class="event-detail">
+          <h3 class="event-title">Estudiando en Platzi 2020</h3>
+          <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
+          <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Ver Curso 1</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageCoutainer">
+          <img class="event-image" src="Images/platzi-conf.jpg" width="500"/>
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">Estudiando en Platzi 2020</h3>
+          <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
+          <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Ver Curso 2</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageCoutainer">
+          <img class="event-image" src="Images/platzi-conf.jpg" width="500"/>
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">Estudiando en Platzi 2020</h3>
+          <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
+          <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Ver Curso 3</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageCoutainer">
+          <img class="event-image" src="Images/platzi-conf.jpg" width="500"/>
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">Estudiando en Platzi 2020</h3>
+          <p class="event-description">Estudio en Platzi gracias a una beca de la Secretaria de Inovacion y Tecnologia</p>
+          <a class="event-url" href="https://platzi.com/desarrollo-php/ " target="_blank">Ver Curso ...</a>
+        </div>
       </article>
     </section> 
     <section id="contacto" class="contact">
@@ -60,7 +94,22 @@
         <input type="text" placeholder="Déjame tu email" id="email">
         <button>Enviar</button>
       </form>
+      <div class="social">
+        <a href="https://twitter.com/adonayulloa" target="_blank" class="social-link twitter"></a>
+        <a href="https://facebook.com/adony.ulloa.35" target="_blank" class="social-link facebook"></a>
+        <a href="https://github.com/AdonyUlloa" target="_blank" class="social-link github"></a>
+        <a href="https://instagram.com/adony_ulloa/" target="_blank" class="social-link instagram"></a>
+      </div>
     </section>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+      <div>
+        <p>Cursos de Desarrollo online 2020 <img src="images/platzi.png" width="80" alt="Platzi"></p>
+      </div>
+      <div>
+        <p>
+          Designid width by <a href="https:/twitter.com/adonayulloa">@adonayulloa</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
